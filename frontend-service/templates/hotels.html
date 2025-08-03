@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hotels</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <h1>Available Hotels</h1>
+    <ul>
+        {% for hotel in hotels %}
+        <li>{{ hotel.hotel_id }} - {{ hotel.name }} ({{ hotel.city }})</li>
+        {% endfor %}
+    </ul>
+    <a href="/">Back</a>
+</body>
+</html>
