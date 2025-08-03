@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Travel Booking</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <h1>Welcome to the Travel Booking Platform</h1>
+
+    <h2>Register</h2>
+    <form method="post" action="/register">
+        <input type="text" name="name" placeholder="Name" required />
+        <input type="email" name="email" placeholder="Email" required />
+        <button type="submit">Register</button>
+    </form>
+
+    <h2>Explore</h2>
+    <a href="/flights">View Flights</a> |
+    <a href="/hotels">View Hotels</a> |
+    <a href="/bookings">My Bookings</a>
+</body>
+</html>
