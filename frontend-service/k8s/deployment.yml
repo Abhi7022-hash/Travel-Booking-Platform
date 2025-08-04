@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ui-deployment
+  labels:
+    app: abhi
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: abhi
+  template:
+    metadata:
+      labels:
+        app: abhi
+    spec:
+      containers:
+        - name: ui-container
+          image: abhishek661/ui-service:latest
+          ports:
+            - containerPort: 5000
