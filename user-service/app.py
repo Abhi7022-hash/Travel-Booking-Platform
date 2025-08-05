@@ -2,7 +2,7 @@ from flask import Flask, render_template, request, jsonify
 
 app = Flask(__name__)
 
-# Dummy user data
+
 users = [
     {"id": 1, "name": "Abhi", "email": "abhi@example.com"},
     {"id": 2, "name": "Meera", "email": "meera@example.com"}
