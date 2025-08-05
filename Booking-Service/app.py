@@ -3,7 +3,6 @@ import uuid
 
 app = Flask(__name__)
 
-# In-memory bookings list (simulate a DB)
 bookings = []
 
 @app.route('/book', methods=['POST'])
